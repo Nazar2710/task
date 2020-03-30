@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>App5</title>
+    <link href="css/default.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrap">
+        <header><h1>Tasks</h1></header>
+        <main>
+            <div>
+                <label for="login">Введіть Ім'я</label>
+                <input type="text" id="login" name="login" value="" placeholder="Введіть ваше ім'я" />
+                <label for="password">Введіть пароль</label>
+                <input type="password" id="password" name="password" value="" placeholder="Введіть пароль" />
+                <button onclick="click1()">Register</button>
+                <label id="l">Введіть Ім'я</label>
+               
+            </div>          
+            <div>
+                <select id="select" onchange="fillTask()">
+                    <option value="value">Task1</option>
+                    <option value="value">Task2</option>
+                    <option value="value">Task3</option>
+                    <option value="value">Task4</option>
+                </select>
+                <input type="text" id="task" oninput="changeTask()" name="name" value="" />
+            </div>
+        </main>
+
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
